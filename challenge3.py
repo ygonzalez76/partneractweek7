@@ -1,14 +1,18 @@
-text = input("input a text:")
+text = input("input a text: ")
 #tell them to enter a text
 print("You entered: " + text)
 #tell them to put 3 random letters
-randomletters= input("Input three random letters: ")
-print("You entered " + randomletters)
-
 #we tell them how many times the random letters appeared in the text
-for letter in randomletters:
-    count = text.count(randomletters)
-    print(f"The letters '{randomletters}' appears {count} time(s) in the text.")
+letter1 = input("input a random letter: ")
+letter2 = input("input a random letter: ")
+letter3 = input("input a random letter: ")
+
+count = text.count(letter1)
+print(f"The letters '{letter1}' appears {count} time(s) in the text.")
+count = text.count(letter2)
+print(f"The letters '{letter2}' appears {count} time(s) in the text.")
+count = text.count(letter3)
+print(f"The letters '{letter3}' appears {count} time(s) in the text.")
 
 #we tell them how many words there are in total
 num_words = len(text)
